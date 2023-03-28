@@ -2,7 +2,7 @@ export const weakMap = new WeakMap();
 
 export const queryAPI = (api) => {
   if (!weakMap.has(api)) {
-    weakMap.set(api, 0);
+    weakMap.set(api, 1);
   } else {
     weakMap.set(api, weakMap.get(api) + 1);
   }
